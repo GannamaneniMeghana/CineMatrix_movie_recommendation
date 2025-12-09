@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watchlist - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'home' or page == 'search' else '' }}">
+                        <a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'attributes' else '' }}">
+                        <a href="{{ url_for('attributes') }}"><i class="fa-solid fa-list"></i> Attributes</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'services' else '' }}">
+                        <a href="{{ url_for('services') }}"><i class="fa-solid fa-tv"></i> Services</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a></li>
+                    <li class="active"><a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i>
+                            Watchlist</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="user-welcome">
+                    <h1>Your Watchlist</h1>
+                    <p>Movies you want to watch</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">
+                        {% if current_user.is_authenticated %}
+                        {{ current_user.username[0].upper() }}
+                        {% else %}
+                        G
+                        {% endif %}
+                    </div>
+                </div>
+            </header>
+
+            <div class="view-section active">
+
+                <!-- Subscription Optimizer -->
+                {% if optimization_data %}
+                <div class="optimizer-panel"
+                    style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(168, 85, 247, 0.1) 100%); border-radius: 16px; padding: 25px; margin-bottom: 30px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    <div
+                        style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 20px;">
+
+                        <!-- Best Value -->
+                        <div style="flex: 1; min-width: 250px;">
+                            <h3
+                                style="color: #fff; display: flex; align-items: center; gap: 10px; margin-bottom: 15px;">
+                                <i class="fa-solid fa-crown" style="color: #ffd700;"></i> Best Value Subscription
+                            </h3>
+                            <div
+                                style="background: rgba(255,255,255,0.05); padding: 20px; border-radius: 12px; border-left: 4px solid #4ade80;">
+                                <h4 style="font-size: 1.4rem; margin-bottom: 5px; color: #fff;">{{
+                                    best_subscription.service }}</h4>
+                                <p style="color: #ccc; margin-bottom: 15px;">
+                                    <strong>{{ best_subscription.count }}</strong> movies in your watchlist
+                                </p>
+                                <div
+                                    style="display: inline-block; background: rgba(74, 222, 128, 0.2); color: #4ade80; padding: 5px 12px; border-radius: 20px; font-size: 0.9rem;">
+                                    ${{ "%.2f"|format(best_subscription.cost_per_movie) }} / movie
+                                </div>
+                                <p style="font-size: 0.9rem; color: #888; margin-top: 10px;">
+                                    Based on monthly price of ${{ best_subscription.price }}
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Breakdown -->
+                        <div style="flex: 2; min-width: 300px;">
+                            <h3 style="color: #fff; margin-bottom: 15px;">Subscription Breakdown</h3>
+                            <div class="breakdown-grid"
+                                style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px;">
+                                {% for item in optimization_data %}
+                                <div
+                                    style="background: rgba(255,255,255,0.03); padding: 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.05);">
+                                    <div style="font-weight: 500; color: #fff; margin-bottom: 5px;">{{ item.service }}
+                                    </div>
+                                    <div style="font-size: 0.9rem; color: #ccc;">{{ item.count }} movies</div>
+                                    <div style="font-size: 0.8rem; color: #888;">${{ "%.2f"|format(item.cost_per_movie)
+                                        }}/mo</div>
+                                </div>
+                                {% endfor %}
+                            </div>
+
+                            <!-- Advice -->
+                            <div style="margin-top: 20px; font-size: 0.9rem; color: #aaa; font-style: italic;">
+                                <i class="fa-solid fa-lightbulb" style="color: #fbbf24; margin-right: 5px;"></i>
+                                Hint: Consider pausing services not listed here to save money!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="movie-grid">
+                    {% if movies %}
+                    {% for movie in movies %}
+                    <div class="movie-card-wrapper" style="position: relative;">
+                        <a href="{{ url_for('movie_details', title=movie.title) }}" class="movie-card-link">
+                            <div class="movie-card">
+                                <img src="{{ movie.poster }}" class="movie-poster" alt="{{ movie.title }}">
+                                <div class="movie-info">
+                                    <h3>{{ movie.title }}</h3>
+                                    <div class="movie-meta">
+                                        <span>{{ movie.language }}</span>
+                                        <span><i class="fa-solid fa-star" style="color: gold;"></i> {{ movie.rating
+                                            }}</span>
+                                    </div>
+                                    {% if movie.user_review %}
+                                    <div class="user-review-container">
+                                        <p class="user-review-text">"{{ movie.user_review }}"</p>
+                                        <div style="margin-top: 5px;">
+                                            <span class="sentiment-badge-small"
+                                                style="background: {{ '#4ade8020' if movie.review_sentiment == 'positive' else '#f8717120' }}; color: {{ '#4ade80' if movie.review_sentiment == 'positive' else '#f87171' }};">
+                                                {{ movie.review_sentiment }}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </a>
+                        <form action="{{ url_for('remove_from_watchlist') }}" method="POST"
+                            style="position: absolute; top: 10px; right: 10px; z-index: 10;">
+                            <input type="hidden" name="title" value="{{ movie.title }}">
+                            <input type="hidden" name="origin" value="watchlist">
+                            <button type="submit" class="fav-btn active" style="border: none; cursor: pointer;"><i
+                                    class="fa-solid fa-bookmark"></i></button>
+                        </form>
+                    </div>
+                    {% endfor %}
+                    {% else %}
+                    <div class="empty-state">
+                        <p>No movies in watchlist yet.</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bottom Navigation for Mobile -->
+    <nav class="bottom-nav">
+        <a href="{{ url_for('home') }}" class="bottom-nav-item">
+            <i class="fa-solid fa-compass"></i>
+            <span>Discover</span>
+        </a>
+        <a href="{{ url_for('recent_reviews') }}" class="bottom-nav-item">
+            <i class="fa-regular fa-clock"></i>
+            <span>Recent</span>
+        </a>
+        <a href="{{ url_for('watchlist') }}" class="bottom-nav-item active">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Watchlist</span>
+        </a>
+    </nav>
+</body>
+
+</html>

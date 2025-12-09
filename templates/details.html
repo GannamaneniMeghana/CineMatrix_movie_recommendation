@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ movie.title }} - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li><a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a></li>
+                    <li><a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i> Watchlist</a></li>
+                </ul>
+            </div>
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="user-welcome">
+                    <h1>{{ movie.title }}</h1>
+                    <p>{{ movie.genre }}</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">
+                        {% if current_user.is_authenticated %}
+                        {{ current_user.username[0].upper() }}
+                        {% else %}
+                        G
+                        {% endif %}
+                    </div>
+                </div>
+            </header>
+
+            <div class="view-section active">
+                <button onclick="history.back()" class="back-btn">
+                    <i class="fa-solid fa-arrow-left"></i> Back
+                </button>
+
+                <!-- Flash Messages -->
+                {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                    {{ message }}
+                </div>
+                {% endfor %}
+                {% endif %}
+                {% endwith %}
+
+                <div class="movie-detail-header" style="display: flex; gap: 30px; margin-bottom: 40px;">
+                    <img src="{{ movie.poster }}" alt="{{ movie.title }}"
+                        style="width: 300px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                    <div class="movie-detail-info">
+                        <h2>{{ movie.title }}</h2>
+                        <p style="color: #888; margin: 10px 0;">
+                            <span>{{ movie.language }}</span> |
+                            <span><i class="fa-solid fa-star" style="color: gold;"></i> {{ movie.rating }}</span>
+                        </p>
+                        <p style="line-height: 1.6;">{{ movie.description }}</p>
+
+                        <div style="margin-top: 20px;">
+                            {% if is_in_watchlist %}
+                            <form action="{{ url_for('remove_from_watchlist') }}" method="POST"
+                                style="display: inline;">
+                                <input type="hidden" name="title" value="{{ movie.title }}">
+                                <button type="submit" class="btn-secondary"><i class="fa-solid fa-check"></i> In
+                                    Watchlist</button>
+                            </form>
+                            {% else %}
+                            <form action="{{ url_for('add_to_watchlist') }}" method="POST" style="display: inline;">
+                                <input type="hidden" name="title" value="{{ movie.title }}">
+                                <button type="submit" class="btn-primary"><i class="fa-solid fa-plus"></i> Add to
+                                    Watchlist</button>
+                            </form>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Watch Options -->
+                {% if watch_options %}
+                <div class="movie-section" style="margin-bottom: 40px;">
+                    <h3><i class="fa-solid fa-play-circle"></i> Available to Watch On</h3>
+                    <div class="watch-options" style="display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap;">
+                        {% for service in watch_options %}
+                        <div class="service-badge"
+                            style="background: rgba(255,255,255,0.1); padding: 10px 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.1); display: flex; align-items: center; gap: 10px;">
+                            <!-- Simple Icon Logic based on name -->
+                            {% if 'Netflix' in service %} <i class="fa-brands fa-neos" style="color: #E50914;"></i>
+                            {% elif 'Disney' in service %} <i class="fa-brands fa-old-republic"
+                                style="color: #113CCF;"></i>
+                            {% elif 'Prime' in service %} <i class="fa-brands fa-amazon" style="color: #00A8E1;"></i>
+                            {% elif 'Apple' in service %} <i class="fa-brands fa-apple" style="color: #fff;"></i>
+                            {% else %} <i class="fa-solid fa-tv"></i> {% endif %}
+                            <span>{{ service }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="reviews-section">
+                    <h3>Reviews & Ratings</h3>
+
+                    <!-- Review Form -->
+                    <div class="review-form">
+                        <h4>Write a Review</h4>
+                        <form action="{{ url_for('submit_review') }}" method="POST">
+                            <input type="hidden" name="movie_title" value="{{ movie.title }}">
+
+                            <!-- Star Rating Input -->
+                            <div class="rating-input"
+                                style="margin-bottom: 30px; display: flex; align-items: center; gap: 15px;">
+                                <label style="color: var(--text-secondary);">Your Rating:</label>
+                                <div class="stars" style="display: flex; gap: 5px; flex-direction: row-reverse;">
+                                    <input type="radio" id="star5" name="rating" value="5" style="display: none;"><label
+                                        for="star5" title="5 stars"
+                                        style="cursor: pointer; font-size: 1.5rem; color: #444;"><i
+                                            class="fa-solid fa-star"></i></label>
+                                    <input type="radio" id="star4" name="rating" value="4" style="display: none;"><label
+                                        for="star4" title="4 stars"
+                                        style="cursor: pointer; font-size: 1.5rem; color: #444;"><i
+                                            class="fa-solid fa-star"></i></label>
+                                    <input type="radio" id="star3" name="rating" value="3" style="display: none;"><label
+                                        for="star3" title="3 stars"
+                                        style="cursor: pointer; font-size: 1.5rem; color: #444;"><i
+                                            class="fa-solid fa-star"></i></label>
+                                    <input type="radio" id="star2" name="rating" value="2" style="display: none;"><label
+                                        for="star2" title="2 stars"
+                                        style="cursor: pointer; font-size: 1.5rem; color: #444;"><i
+                                            class="fa-solid fa-star"></i></label>
+                                    <input type="radio" id="star1" name="rating" value="1" style="display: none;"><label
+                                        for="star1" title="1 star"
+                                        style="cursor: pointer; font-size: 1.5rem; color: #444;"><i
+                                            class="fa-solid fa-star"></i></label>
+                                </div>
+                                <style>
+                                    .stars input:checked~label i,
+                                    .stars label:hover i,
+                                    .stars label:hover~label i {
+                                        color: #ffd700 !important;
+                                    }
+                                </style>
+                            </div>
+
+                            <div class="form-group" style="margin-bottom: 20px;">
+                                <textarea name="review" rows="4" placeholder="Share your thoughts about this movie..."
+                                    required
+                                    style="width: 100%; padding: 15px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; color: #fff;"></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn"
+                                style="background: var(--primary-color); color: white; border: none; padding: 12px 30px; border-radius: 30px; cursor: pointer;">Submit
+                                Review</button>
+                        </form>
+                    </div>
+
+                    <!-- Reviews List -->
+                    <div class="reviews-list" style="margin-top: 40px;">
+                        {% if reviews %}
+                        {% for review in reviews %}
+                        <div class="review-item"
+                            style="background: rgba(255,255,255,0.03); padding: 20px; border-radius: 16px; margin-bottom: 20px;">
+                            <div
+                                style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                                <div>
+                                    <div class="review-stars"
+                                        style="color: #ffd700; font-size: 0.9rem; margin-bottom: 5px;">
+                                        {% if review.rating %}
+                                        {% for i in range(review.rating|int) %}
+                                        <i class="fa-solid fa-star"></i>
+                                        {% endfor %}
+                                        <span style="color: #888; font-size: 0.8rem; margin-left: 5px;">({{
+                                            review.rating }}/5)</span>
+                                        {% endif %}
+                                    </div>
+                                    <p style="margin: 0;">{{ review.review }}</p>
+                                </div>
+                                <span class="sentiment-badge {{ review.sentiment }}"
+                                    style="padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; background: {{ '#4ade8020' if review.sentiment == 'positive' else '#f8717120' }}; color: {{ '#4ade80' if review.sentiment == 'positive' else '#f87171' }};">
+                                    {{ review.sentiment|capitalize }}
+                                </span>
+                            </div>
+                            <small style="color: #666; display: block; margin-top: 10px;">{{ review.date }}</small>
+                        </div>
+                        {% endfor %}
+                        {% else %}
+                        <p style="color: var(--text-secondary); font-style: italic;">No reviews yet. Be the first to
+                            review!</p>
+                        {% endif %}
+                    </div>
+                </div>
+
+                {% if recommendations %}
+                <div class="modal-recs" style="margin-top: 40px;">
+                    <h3>Since you liked this...</h3>
+                    <div class="movie-grid">
+                        {% for rec in recommendations %}
+                        <a href="{{ url_for('movie_details', title=rec.title) }}" class="movie-card-link">
+                            <div class="movie-card">
+                                <img src="{{ rec.poster }}" class="movie-poster" alt="{{ rec.title }}">
+                                <div class="movie-info">
+                                    <h3>{{ rec.title }}</h3>
+                                    <div class="movie-meta">
+                                        <span>{{ rec.language }}</span>
+                                        <span><i class="fa-solid fa-star" style="color: gold;"></i> {{ rec.rating
+                                            }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

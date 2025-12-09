@@ -1,0 +1,107 @@
+Movie Name,Rating(10),Genre,Language,Description,Duration (min)
+The Shawshank Redemption,9.7,Drama,English,"A powerful drama about hope and friendship inside a prison.",142
+The Godfather,9.6,Crime,English,"A gripping story of a mafia family’s loyalty, power, and betrayal.",175
+The Dark Knight,9.5,Action,English,"A dark and thrilling superhero story featuring Gotham’s fight against chaos.",152
+Inception,9.2,Sci-Fi,English,"A mind-bending sci-fi thriller exploring dreams within dreams.",148
+Fight Club,9.1,Drama,English,"A gritty story exploring identity, rebellion, and underground fight culture.",139
+Forrest Gump,8.9,Drama,English,"A heartwarming story of a man who touches history in unexpected ways.",142
+Interstellar,9.0,Sci-Fi,English,"A breathtaking journey through space searching for humanity’s new home.",169
+Gladiator,8.8,Action,English,"A Roman general seeks revenge after being betrayed and exiled.",155
+The Matrix,9.1,Sci-Fi,English,"A hacker uncovers the astonishing truth about reality and machines.",136
+Titanic,8.8,Romance,English,"A tragic romance unfolds aboard the ill-fated RMS Titanic.",195
+Avatar,8.7,Fantasy,English,"A visually stunning tale of humans encountering the alien world Pandora.",162
+Avengers: Endgame,8.9,Action,English,"Heroes unite for a final battle to reverse the catastrophic blip.",181
+The Avengers,8.4,Action,English,"Earth’s mightiest heroes assemble to stop an alien invasion.",143
+Jurassic Park,8.7,Sci-Fi,English,"A thrilling adventure where dinosaurs are brought back to life.",127
+The Lion King,8.8,Animation,English,"A young lion prince must reclaim his rightful place as king.",88
+Toy Story,8.3,Animation,English,"Toys secretly come to life and embark on heartfelt adventures.",81
+Finding Nemo,8.4,Animation,English,"A clownfish crosses the ocean to rescue his lost son.",100
+Up,8.5,Animation,English,"A widower flies his house to South America seeking adventure.",96
+Coco,8.6,Animation,English,"A young musician enters the Land of the Dead searching for his past.",105
+Monsters Inc,8.1,Animation,English,"Two monsters uncover a conspiracy in the world of children's screams.",92
+The Conjuring,7.8,Horror,English,"Paranormal investigators help a family facing dark supernatural forces.",112
+Insidious,7.4,Horror,English,"A family battles sinister entities lurking in the astral plane.",103
+Annabelle,6.8,Horror,English,"A haunted doll unleashes terror on a young family.",99
+Hereditary,8.1,Horror,English,"A family uncovers terrifying secrets following a tragic loss.",127
+The Exorcist,8.4,Horror,English,"A young girl is possessed, prompting a desperate attempt at exorcism.",122
+The Nun,6.5,Horror,English,"A priest investigates a demon lurking inside a Romanian abbey.",96
+It,7.4,Horror,English,"Children face a terrifying shape-shifting clown in their town.",135
+It Chapter Two,6.8,Horror,English,"Adults return to confront the evil clown Pennywise.",169
+Parasite,8.9,Thriller,Korean,"A poor family infiltrates a wealthy household with shocking results.",132
+Train to Busan,8.4,Thriller,Korean,"Passengers fight to survive a zombie outbreak on a train.",118
+Oldboy,8.3,Thriller,Korean,"A man seeks revenge after being imprisoned mysteriously for 15 years.",120
+Snowpiercer,7.9,Action,English,"Humanity survives on a perpetual train after a global freeze.",126
+The Raid,8.1,Action,Indonesian,"An elite team fights through a crime-filled high-rise.",101
+Mad Max: Fury Road,8.6,Action,English,"A wild chase across the desert in a post-apocalyptic world.",120
+John Wick,8.5,Action,English,"A retired assassin seeks vengeance after losing everything.",101
+John Wick 2,8.1,Action,English,"John Wick returns to honor a blood oath from his past.",122
+John Wick 3,7.9,Action,English,"John fights the world’s top killers after being excommunicated.",130
+Django Unchained,8.5,Western,English,"A freed slave teams with a bounty hunter to rescue his wife.",165
+Pulp Fiction,8.9,Crime,English,"Intersecting stories of crime, chaos, and dark humor in LA.",154
+Kill Bill Vol 1,8.1,Action,English,"A former assassin seeks revenge against her deadly squad.",111
+Kill Bill Vol 2,8.0,Action,English,"The Bride continues her quest for vengeance against Bill.",137
+The Irishman,8.2,Crime,English,"A hitman recounts his life in organized crime.",209
+The Wolf of Wall Street,8.2,Drama,English,"A stockbroker rises and falls in a world of excess.",180
+Shutter Island,8.2,Thriller,English,"A detective investigates a psychiatric hospital on a remote island.",138
+Gone Girl,8.1,Thriller,English,"A man becomes the prime suspect in his wife’s disappearance.",149
+The Social Network,7.8,Drama,English,"The rise of Facebook leads to conflict and betrayal.",120
+Whiplash,8.5,Drama,English,"A young drummer pushes his limits under a ruthless instructor.",107
+La La Land,8.0,Romance,English,"A musician and an actress pursue dreams that pull them apart.",128
+The Notebook,7.9,Romance,English,"A heartfelt tale of love and memories across decades.",123
+A Star Is Born,7.8,Drama,English,"An aging musician mentors a rising singer as their bond grows.",136
+Moonlight,7.9,Drama,English,"A boy grows up navigating identity, hardship, and love.",111
+Joker,8.4,Crime,English,"An isolated man descends into madness spawning a violent uprising.",122
+The Batman,8.1,Action,English,"Batman uncovers a web of corruption tied to a serial killer.",176
+Man of Steel,7.5,Action,English,"Superman grapples with alien identity and heroic destiny.",143
+Iron Man,8.2,Action,English,"A billionaire builds a high-tech suit to become Iron Man.",126
+Iron Man 2,7.1,Action,English,"Threats emerge as Stark faces both corporate and military rivals.",124
+Iron Man 3,7.3,Action,English,"Tony Stark confronts PTSD and a dangerous new enemy.",130
+Captain America: Civil War,7.8,Action,English,"The Avengers split after a political dispute sparks conflict.",147
+Captain America: The Winter Soldier,8.0,Action,English,"Steve Rogers uncovers a conspiracy inside S.H.I.E.L.D.",136
+Black Panther,8.3,Action,English,"The king of Wakanda defends his nation from internal threats.",134
+Doctor Strange,7.8,Fantasy,English,"A surgeon explores mystical dimensions after a tragic accident.",115
+Spider-Man: Homecoming,7.6,Action,English,"Peter Parker balances teenage life and hero duties.",133
+Spider-Man: No Way Home,8.3,Action,English,"Multiverse chaos erupts as past villains return.",148
+The Amazing Spider-Man,7.0,Action,English,"Peter uncovers secrets about his parents and powers.",136
+The Amazing Spider-Man 2,6.9,Action,English,"Spider-Man faces Electro and personal loss.",141
+Logan,8.1,Action,English,"Wolverine protects a young mutant in his final journey.",137
+Deadpool,8.0,Action,English,"A mercenary with dark humor becomes an unconventional hero.",108
+Deadpool 2,7.8,Action,English,"Deadpool forms a team to protect a young mutant.",119
+X-Men,7.4,Action,English,"Mutants struggle for coexistence in a human world.",104
+X2,7.6,Action,English,"Mutants face a threat that endangers both sides.",134
+X-Men: Days of Future Past,8.0,Action,English,"Mutants send Wolverine back in time to prevent extinction.",131
+The Hunger Games,7.2,Action,English,"A brave girl volunteers for a deadly televised competition.",142
+The Hunger Games: Catching Fire,7.5,Action,English,"Katniss becomes a symbol of rebellion.",146
+The Hunger Games: Mockingjay Part 1,6.8,Action,English,"Katniss leads a revolution against the Capitol.",123
+The Hunger Games: Mockingjay Part 2,6.5,Action,English,"The rebellion reaches its final and most dangerous stage.",137
+Dune,8.1,Sci-Fi,English,"A young heir becomes leader in a desert planet’s struggle.",155
+Dune Part Two,8.6,Sci-Fi,English,"Paul Atreides rises against oppressive forces.",166
+Blade Runner 2049,8.0,Sci-Fi,English,"A detective uncovers secrets that threaten humanity’s future.",164
+Arrival,8.0,Sci-Fi,English,"A linguist communicates with aliens to prevent global war.",116
+Gravity,7.7,Sci-Fi,English,"A stranded astronaut struggles to survive after disaster.",91
+Ad Astra,7.0,Sci-Fi,English,"A man travels through space searching for his missing father.",123
+The Martian,8.0,Sci-Fi,English,"A stranded astronaut uses science to survive on Mars.",144
+Lucy,6.4,Sci-Fi,English,"A woman gains enhanced abilities after a drug enters her system.",89
+Bird Box,6.7,Thriller,English,"A mother navigates a world where sight triggers death.",124
+Extraction,7.0,Action,English,"A mercenary undertakes a dangerous mission to rescue a child.",117
+RRR,8.0,Action,Telugu,"Two revolutionaries forge an explosive friendship during British rule.",182
+Baahubali: The Beginning,8.1,Action,Telugu,"A warrior rises to fulfill his destiny in a mythical kingdom.",158
+Baahubali 2: The Conclusion,8.3,Action,Telugu,"The epic saga concludes with battles and revelations.",167
+Pushpa: The Rise,7.8,Action,Telugu,"A smuggler climbs the ranks of a red sandalwood syndicate.",179
+KGF Chapter 1,8.2,Action,Kannada,"A man rises from poverty to power in the gold mines.",155
+KGF Chapter 2,8.4,Action,Kannada,"Rocky faces powerful enemies to protect his empire.",168
+Kantara,8.2,Thriller,Kannada,"A forest officer confronts divine folklore and conflict.",148
+Vikram,8.4,Action,Tamil,"An agent hunts masked criminals involved in drug syndicates.",172
+Leo,7.4,Action,Tamil,"A café owner’s violent past resurfaces.",164
+Master,7.3,Action,Tamil,"A professor is assigned to reform students at a juvenile home.",179
+Jai Bhim,8.8,Drama,Tamil,"A lawyer fights for justice for tribal communities.",164
+3 Idiots,8.4,Comedy,Hindi,"Three friends navigate college life and pressure.",170
+Dangal,8.4,Drama,Hindi,"A father trains his daughters to become world-class wrestlers.",161
+PK,8.1,Comedy,Hindi,"An alien questions human behavior and beliefs.",153
+Bajrangi Bhaijaan,8.1,Drama,Hindi,"A man helps a lost Pakistani girl reunite with her family.",159
+Drishyam,8.7,Thriller,Hindi,"A man uses wit to protect his family after a crime.",163
+Zindagi Na Milegi Dobara,8.1,Drama,Hindi,"Three friends rediscover life on a trip to Spain.",155
+Chhichhore,8.0,Comedy,Hindi,"A father reflects on college friendships and failures.",143
+Koi Mil Gaya,7.0,Sci-Fi,Hindi,"A boy befriends an alien who changes his life.",171
+War,6.9,Action,Hindi,"An agent hunts a rogue mentor across the globe.",154
+Ek Tha Tiger,6.8,Action,Hindi,"A spy falls in love during a dangerous mission.",132

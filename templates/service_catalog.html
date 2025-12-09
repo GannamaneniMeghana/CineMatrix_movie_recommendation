@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ service|capitalize }} Movies - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Image -->
+    <div class="bg-image"></div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li class="{{ 'active' if current_page == 'home' else '' }}">
+                        <a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a>
+                    </li>
+                    <li class="{{ 'active' if current_page == 'attributes' else '' }}">
+                        <a href="{{ url_for('attributes') }}"><i class="fa-solid fa-list"></i> Attributes</a>
+                    </li>
+                    <li class="{{ 'active' if current_page == 'services' else '' }}">
+                        <a href="{{ url_for('services') }}"><i class="fa-solid fa-tv"></i> Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li class="{{ 'active' if current_page == 'recent' else '' }}">
+                        <a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a>
+                    </li>
+                    <li class="{{ 'active' if current_page == 'watchlist' else '' }}">
+                        <a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i> Watchlist</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="user-welcome">
+                    <button onclick="history.back()" class="back-btn"><i class="fa-solid fa-arrow-left"></i>
+                        Back</button>
+                    <h1>{{ service|capitalize }} Movies</h1>
+                    <p>Browsing catalog</p>
+                </div>
+            </header>
+
+            <div class="section-title">
+                <h2>Movies on {{ service|capitalize }}</h2>
+            </div>
+
+            {% if movies %}
+            <div class="movie-grid">
+                {% for movie in movies %}
+                <a href="{{ url_for('movie_details', title=movie.title) }}" class="movie-card-link">
+                    <div class="movie-card">
+                        {% if movie.poster and movie.poster != 'N/A' %}
+                        <img src="{{ movie.poster }}" alt="{{ movie.title }}" class="movie-poster">
+                        {% else %}
+                        <div class="movie-poster"
+                            style="background: #333; display: flex; align-items: center; justify-content: center; color: #777;">
+                            <span>No Poster</span>
+                        </div>
+                        {% endif %}
+                        <div class="movie-info">
+                            <div class="movie-meta">
+                                <span>{{ movie.year }}</span>
+                                <span><i class="fa-solid fa-star" style="color: gold;"></i> {{ movie.rating }}</span>
+                            </div>
+                            <h3>{{ movie.title }}</h3>
+                            <div class="movie-genre">{{ movie.genre }}</div>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div>
+
+            <div class="pagination" style="margin-top: 30px; display: flex; justify-content: center; gap: 20px;">
+                {% if page_num > 1 %}
+                <a href="{{ url_for('service_catalog', service_name=service_slug, page=page_num-1) }}" class="auth-btn"
+                    style="width: auto; padding: 10px 20px;">Previous</a>
+                {% endif %}
+
+                <span style="color: var(--text-secondary); align-self: center;">Page {{ page_num }} of {{ total_pages
+                    }}</span>
+
+                {% if page_num < total_pages %} <a
+                    href="{{ url_for('service_catalog', service_name=service_slug, page=page_num+1) }}" class="auth-btn"
+                    style="width: auto; padding: 10px 20px;">Next</a>
+                    {% endif %}
+            </div>
+
+            {% else %}
+            <div class="empty-state">
+                <i class="fa-solid fa-film"></i>
+                <h3>No movies found</h3>
+                <p>Unable to load catalog for {{ service|capitalize }}</p>
+            </div>
+            {% endif %}
+        </main>
+    </div>
+</body>
+
+</html>

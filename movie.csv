@@ -1,0 +1,357 @@
+Movie Name,Rating(10),Genre,Language,Description
+Bahubali,6.4,Drama|Romance,kannada;telugu,A drama drama featuring excellent performances and emotional depth.
+RRR,6.5,Family,hindi;telugu,"An exciting family movie blending action, emotion, and music."
+KGF Chapter 1,8.1,Romance,telugu,KGF Chapter 1 is an engaging romance film appreciated for its strong storyline.
+KGF Chapter 2,6.8,Romance,telugu,"An exciting romance movie blending action, emotion, and music."
+Vikram,8.5,Fantasy,bengali;telugu,A fantasy drama featuring excellent performances and emotional depth.
+Leo,8.1,Musical,telugu,A musical drama featuring excellent performances and emotional depth.
+Jawan,7.5,Fantasy|Adventure,kannada;telugu,A fantasy drama featuring excellent performances and emotional depth.
+Pathaan,9.4,Fantasy,marathi,Pathaan is an engaging fantasy film appreciated for its strong storyline.
+Animal,7.3,Romance,telugu,A commercial romance entertainer with powerful scenes and visuals.
+3 Idiots,6.9,Action|Comedy,telugu,A critically acclaimed action known for direction and cinematography.
+Dangal,6.4,Mythology,bengali,Dangal is an engaging mythology film appreciated for its strong storyline.
+PK,7.0,Mythology,marathi,"An exciting mythology movie blending action, emotion, and music."
+Gully Boy,8.5,Fantasy,telugu,A fantasy drama featuring excellent performances and emotional depth.
+Kantara,7.0,Biography|Drama,hindi,A biography drama featuring excellent performances and emotional depth.
+Sita Ramam,7.3,Comedy,punjabi,A commercial comedy entertainer with powerful scenes and visuals.
+Kurup,7.3,Crime,malayalam,A commercial crime entertainer with powerful scenes and visuals.
+Minnal Murali,9.3,Fantasy|Adventure,hindi,"An exciting fantasy movie blending action, emotion, and music."
+Sarkar,6.6,Drama|Romance,malayalam,A drama drama featuring excellent performances and emotional depth.
+Master,7.3,Musical,malayalam,A commercial musical entertainer with powerful scenes and visuals.
+Pushpa,8.7,Biography|Drama,malayalam,Pushpa is an engaging biography film appreciated for its strong storyline.
+Drishyam,7.4,Sport,hindi,A sport drama featuring excellent performances and emotional depth.
+Drishyam 2,9.1,Action|Drama,marathi,A action drama featuring excellent performances and emotional depth.
+Vikram Vedha,7.7,Drama|Romance,punjabi,A drama drama featuring excellent performances and emotional depth.
+Asuran,6.5,Adventure,kannada,"An exciting adventure movie blending action, emotion, and music."
+Tanhaji,9.1,Sci-Fi,bengali,A commercial sci-fi entertainer with powerful scenes and visuals.
+War,9.5,Family,tamil,"An exciting family movie blending action, emotion, and music."
+Kabir Singh,6.3,History,telugu,Kabir Singh is an engaging history film appreciated for its strong storyline.
+Arjun Reddy,8.2,Thriller,telugu,"An exciting thriller movie blending action, emotion, and music."
+Super Deluxe,7.3,Romance,punjabi,"An exciting romance movie blending action, emotion, and music."
+Ratsasan,9.4,Adventure,telugu,Ratsasan is an engaging adventure film appreciated for its strong storyline.
+Ala Vaikunthapurramuloo,9.1,Crime|Thriller,telugu,A commercial crime entertainer with powerful scenes and visuals.
+Maharshi,7.0,Comedy,tamil,A critically acclaimed comedy known for direction and cinematography.
+Rangasthalam,9.3,Action,kannada,"An exciting action movie blending action, emotion, and music."
+Manikarnika,6.6,Biography|Drama,hindi,A commercial biography entertainer with powerful scenes and visuals.
+Sanju,7.8,Drama|Romance,malayalam,A drama drama featuring excellent performances and emotional depth.
+Padmaavat,8.7,Mystery,telugu,"An exciting mystery movie blending action, emotion, and music."
+RRR Hindi,7.7,Sport,hindi,A commercial sport entertainer with powerful scenes and visuals.
+Robot 2.0,6.8,Biography,malayalam,"An exciting biography movie blending action, emotion, and music."
+Baahubali 2 Hindi,6.3,Romance,punjabi,Baahubali 2 Hindi is an engaging romance film appreciated for its strong storyline.
+KGF Hindi,7.9,Biography|Drama,tamil,A biography drama featuring excellent performances and emotional depth.
+Charlie 777,7.7,Crime|Thriller,tamil,A commercial crime entertainer with powerful scenes and visuals.
+Jersey,9.1,Animation,bengali,A animation drama featuring excellent performances and emotional depth.
+Kumbalangi Nights,8.6,Mythology,malayalam,A commercial mythology entertainer with powerful scenes and visuals.
+Karnan,9.5,Horror,marathi,A critically acclaimed horror known for direction and cinematography.
+Super 30,7.6,Animation,malayalam,A animation drama featuring excellent performances and emotional depth.
+Lagaan,7.2,Romance,malayalam,"An exciting romance movie blending action, emotion, and music."
+Swades,6.0,Family,telugu,A family drama featuring excellent performances and emotional depth.
+Queen,9.2,Romance,marathi,Queen is an engaging romance film appreciated for its strong storyline.
+Kahaani,6.8,Animation,punjabi,A animation drama featuring excellent performances and emotional depth.
+Andhadhun,6.5,Mythology,punjabi,A mythology drama featuring excellent performances and emotional depth.
+Drishyam Hindi,8.8,History,malayalam,Drishyam Hindi is an engaging history film appreciated for its strong storyline.
+PS1,8.3,Comedy,marathi,A critically acclaimed comedy known for direction and cinematography.
+PS2,7.6,Sci-Fi,telugu,PS2 is an engaging sci-fi film appreciated for its strong storyline.
+Kaithi,7.4,Drama,marathi,Kaithi is an engaging drama film appreciated for its strong storyline.
+Vada Chennai,6.7,Family,punjabi,A family drama featuring excellent performances and emotional depth.
+Kabzaa,6.6,Sci-Fi,punjabi,A sci-fi drama featuring excellent performances and emotional depth.
+Indian Movie 1,7.6,Romance,hindi,Indian Movie 1 is an engaging romance film appreciated for its strong storyline.
+Indian Movie 2,9.5,Drama|Romance,telugu,Indian Movie 2 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 3,9.0,Biography|Drama,tamil,A critically acclaimed biography known for direction and cinematography.
+Indian Movie 4,7.7,History,bengali,Indian Movie 4 is an engaging history film appreciated for its strong storyline.
+Love Story 5,7.3,Crime,bengali,A commercial crime entertainer with powerful scenes and visuals.
+Indian Movie 6,7.0,Musical,punjabi,A musical drama featuring excellent performances and emotional depth.
+Indian Movie 7,7.0,Fantasy,telugu,"An exciting fantasy movie blending action, emotion, and music."
+Indian Movie 8,7.9,Comedy|Romance,marathi,Indian Movie 8 is an engaging comedy film appreciated for its strong storyline.
+Veeram 9,8.0,Drama,tamil,Veeram 9 is an engaging drama film appreciated for its strong storyline.
+Love Story 10,6.3,Animation,tamil,Love Story 10 is an engaging animation film appreciated for its strong storyline.
+Indian Movie 11,6.2,Action|Comedy,malayalam,A critically acclaimed action known for direction and cinematography.
+Indian Movie 12,9.3,Comedy,malayalam,"An exciting comedy movie blending action, emotion, and music."
+Action Hero 13,6.1,Action|Comedy,hindi,A critically acclaimed action known for direction and cinematography.
+Indian Movie 14,8.0,Crime|Thriller,marathi,A commercial crime entertainer with powerful scenes and visuals.
+Love Story 15,8.3,Fantasy,marathi,A fantasy drama featuring excellent performances and emotional depth.
+Indian Movie 16,7.4,Adventure,kannada,A critically acclaimed adventure known for direction and cinematography.
+Indian Movie 17,9.3,Sport,hindi,Indian Movie 17 is an engaging sport film appreciated for its strong storyline.
+Veeram 18,8.2,Musical,hindi,Veeram 18 is an engaging musical film appreciated for its strong storyline.
+Indian Movie 19,6.7,Mythology,kannada,A mythology drama featuring excellent performances and emotional depth.
+Love Story 20,9.1,Mystery,malayalam,A commercial mystery entertainer with powerful scenes and visuals.
+Indian Movie 21,6.6,Biography,kannada,"An exciting biography movie blending action, emotion, and music."
+Indian Movie 22,7.9,Drama|Romance,kannada,Indian Movie 22 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 23,6.9,Thriller,hindi,"An exciting thriller movie blending action, emotion, and music."
+Indian Movie 24,7.0,Thriller,malayalam,A commercial thriller entertainer with powerful scenes and visuals.
+Love Story 25,8.4,Fantasy,kannada,"An exciting fantasy movie blending action, emotion, and music."
+Action Hero 26,6.9,History,telugu,Action Hero 26 is an engaging history film appreciated for its strong storyline.
+Veeram 27,7.5,Drama|Romance,kannada,Veeram 27 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 28,7.2,Action,tamil,A commercial action entertainer with powerful scenes and visuals.
+Indian Movie 29,8.6,Crime,bengali,"An exciting crime movie blending action, emotion, and music."
+Love Story 30,6.4,Action,tamil,"An exciting action movie blending action, emotion, and music."
+Indian Movie 31,8.9,Drama,tamil,A critically acclaimed drama known for direction and cinematography.
+Indian Movie 32,6.1,Thriller,marathi,Indian Movie 32 is an engaging thriller film appreciated for its strong storyline.
+Indian Movie 33,6.7,Mystery,malayalam,Indian Movie 33 is an engaging mystery film appreciated for its strong storyline.
+Indian Movie 34,8.7,Mystery,bengali,"An exciting mystery movie blending action, emotion, and music."
+Love Story 35,6.5,Comedy|Romance,malayalam,A comedy drama featuring excellent performances and emotional depth.
+Veeram 36,9.1,Crime,telugu,A crime drama featuring excellent performances and emotional depth.
+Indian Movie 37,9.2,Comedy|Romance,bengali,A comedy drama featuring excellent performances and emotional depth.
+Indian Movie 38,6.6,Adventure,hindi,A critically acclaimed adventure known for direction and cinematography.
+Action Hero 39,9.0,Drama,malayalam,A drama drama featuring excellent performances and emotional depth.
+Love Story 40,7.2,Musical,malayalam,A musical drama featuring excellent performances and emotional depth.
+Indian Movie 41,8.3,Action,bengali,A commercial action entertainer with powerful scenes and visuals.
+Indian Movie 42,9.0,Adventure,kannada,A commercial adventure entertainer with powerful scenes and visuals.
+Indian Movie 43,7.8,Drama|Romance,marathi,Indian Movie 43 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 44,9.1,Comedy,kannada,A comedy drama featuring excellent performances and emotional depth.
+Veeram 45,9.4,Action|Drama,kannada,Veeram 45 is an engaging action film appreciated for its strong storyline.
+Indian Movie 46,8.1,Comedy,marathi,A commercial comedy entertainer with powerful scenes and visuals.
+Indian Movie 47,8.1,Sci-Fi,hindi,A critically acclaimed sci-fi known for direction and cinematography.
+Indian Movie 48,6.7,Action|Drama,telugu,A critically acclaimed action known for direction and cinematography.
+Indian Movie 49,7.8,Action,malayalam,A commercial action entertainer with powerful scenes and visuals.
+Love Story 50,6.2,Sci-Fi,marathi,"An exciting sci-fi movie blending action, emotion, and music."
+Indian Movie 51,8.3,Sport,hindi,A commercial sport entertainer with powerful scenes and visuals.
+Action Hero 52,7.1,Animation,bengali,A commercial animation entertainer with powerful scenes and visuals.
+Indian Movie 53,8.4,Horror,tamil,A horror drama featuring excellent performances and emotional depth.
+Veeram 54,8.3,Sci-Fi,bengali,A sci-fi drama featuring excellent performances and emotional depth.
+Love Story 55,8.0,Action|Comedy,bengali,"An exciting action movie blending action, emotion, and music."
+Indian Movie 56,7.1,Action,malayalam,A critically acclaimed action known for direction and cinematography.
+Indian Movie 57,8.1,Action|Drama,marathi,A critically acclaimed action known for direction and cinematography.
+Indian Movie 58,7.5,Musical,malayalam,"An exciting musical movie blending action, emotion, and music."
+Indian Movie 59,8.8,History,tamil,Indian Movie 59 is an engaging history film appreciated for its strong storyline.
+Love Story 60,7.8,Biography,marathi,Love Story 60 is an engaging biography film appreciated for its strong storyline.
+Indian Movie 61,6.8,Biography|Drama,kannada,A biography drama featuring excellent performances and emotional depth.
+Indian Movie 62,6.5,Fantasy,telugu,A fantasy drama featuring excellent performances and emotional depth.
+Veeram 63,8.1,History,hindi,A critically acclaimed history known for direction and cinematography.
+Indian Movie 64,9.1,Sci-Fi,malayalam,A critically acclaimed sci-fi known for direction and cinematography.
+Action Hero 65,7.4,History,tamil,Action Hero 65 is an engaging history film appreciated for its strong storyline.
+Indian Movie 66,9.0,Biography|Drama,hindi,A critically acclaimed biography known for direction and cinematography.
+Indian Movie 67,6.6,Family,punjabi,Indian Movie 67 is an engaging family film appreciated for its strong storyline.
+Indian Movie 68,6.9,Mythology,hindi,A critically acclaimed mythology known for direction and cinematography.
+Indian Movie 69,8.8,Thriller,marathi,A critically acclaimed thriller known for direction and cinematography.
+Love Story 70,8.9,Action|Comedy,bengali,"An exciting action movie blending action, emotion, and music."
+Indian Movie 71,9.1,Musical,punjabi,A critically acclaimed musical known for direction and cinematography.
+Veeram 72,8.6,Adventure,kannada,"An exciting adventure movie blending action, emotion, and music."
+Indian Movie 73,8.2,History,kannada,A critically acclaimed history known for direction and cinematography.
+Indian Movie 74,8.5,Romance,malayalam,A commercial romance entertainer with powerful scenes and visuals.
+Love Story 75,7.1,Sport,hindi,A sport drama featuring excellent performances and emotional depth.
+Indian Movie 76,6.8,Thriller,tamil,A thriller drama featuring excellent performances and emotional depth.
+Indian Movie 77,7.5,Romance,marathi,"An exciting romance movie blending action, emotion, and music."
+Action Hero 78,7.5,Musical,malayalam,A critically acclaimed musical known for direction and cinematography.
+Indian Movie 79,9.2,Horror,telugu,"An exciting horror movie blending action, emotion, and music."
+Love Story 80,7.7,Horror,marathi,A commercial horror entertainer with powerful scenes and visuals.
+Veeram 81,7.4,Biography|Drama,bengali,"An exciting biography movie blending action, emotion, and music."
+Indian Movie 82,8.6,Comedy|Romance,malayalam,A critically acclaimed comedy known for direction and cinematography.
+Indian Movie 83,7.0,Family,punjabi,Indian Movie 83 is an engaging family film appreciated for its strong storyline.
+Indian Movie 84,7.2,Horror,bengali,A horror drama featuring excellent performances and emotional depth.
+Love Story 85,9.2,Musical,telugu,A critically acclaimed musical known for direction and cinematography.
+Indian Movie 86,8.0,Action|Drama,telugu,Indian Movie 86 is an engaging action film appreciated for its strong storyline.
+Indian Movie 87,7.5,Drama|Romance,punjabi,A drama drama featuring excellent performances and emotional depth.
+Indian Movie 88,6.9,Drama,marathi,A drama drama featuring excellent performances and emotional depth.
+Indian Movie 89,7.1,Musical,bengali,A commercial musical entertainer with powerful scenes and visuals.
+Veeram 90,9.3,Biography|Drama,bengali,A commercial biography entertainer with powerful scenes and visuals.
+Action Hero 91,7.6,Romance,telugu,A commercial romance entertainer with powerful scenes and visuals.
+Indian Movie 92,8.3,Family,telugu,Indian Movie 92 is an engaging family film appreciated for its strong storyline.
+Indian Movie 93,6.7,Family,telugu,"An exciting family movie blending action, emotion, and music."
+Indian Movie 94,6.8,Thriller,punjabi,Indian Movie 94 is an engaging thriller film appreciated for its strong storyline.
+Love Story 95,9.3,Action|Drama,punjabi,A commercial action entertainer with powerful scenes and visuals.
+Indian Movie 96,7.3,Biography|Drama,hindi,A biography drama featuring excellent performances and emotional depth.
+Indian Movie 97,6.4,Biography,telugu,A commercial biography entertainer with powerful scenes and visuals.
+Indian Movie 98,8.4,Action|Drama,bengali,A critically acclaimed action known for direction and cinematography.
+Veeram 99,6.7,Fantasy|Adventure,malayalam,Veeram 99 is an engaging fantasy film appreciated for its strong storyline.
+Love Story 100,8.7,Fantasy|Adventure,hindi,"An exciting fantasy movie blending action, emotion, and music."
+Indian Movie 101,7.2,Drama,bengali,A commercial drama entertainer with powerful scenes and visuals.
+Indian Movie 102,7.8,Romance,marathi,Indian Movie 102 is an engaging romance film appreciated for its strong storyline.
+Indian Movie 103,8.9,Sci-Fi,hindi,A critically acclaimed sci-fi known for direction and cinematography.
+Action Hero 104,8.2,Mystery,punjabi,A mystery drama featuring excellent performances and emotional depth.
+Love Story 105,6.6,Sci-Fi,kannada,"An exciting sci-fi movie blending action, emotion, and music."
+Indian Movie 106,8.7,Mythology,punjabi,A critically acclaimed mythology known for direction and cinematography.
+Indian Movie 107,8.1,Comedy|Romance,marathi,A comedy drama featuring excellent performances and emotional depth.
+Veeram 108,7.0,Romance,punjabi,A romance drama featuring excellent performances and emotional depth.
+Indian Movie 109,7.6,Biography|Drama,bengali,A commercial biography entertainer with powerful scenes and visuals.
+Love Story 110,7.7,Action,marathi,A action drama featuring excellent performances and emotional depth.
+Indian Movie 111,6.7,History,kannada,A commercial history entertainer with powerful scenes and visuals.
+Indian Movie 112,9.1,Adventure,kannada,"An exciting adventure movie blending action, emotion, and music."
+Indian Movie 113,7.8,Action,malayalam,Indian Movie 113 is an engaging action film appreciated for its strong storyline.
+Indian Movie 114,8.5,Family,punjabi,"An exciting family movie blending action, emotion, and music."
+Love Story 115,6.8,Biography|Drama,punjabi,A critically acclaimed biography known for direction and cinematography.
+Indian Movie 116,8.8,Musical,hindi,A commercial musical entertainer with powerful scenes and visuals.
+Action Hero 117,7.4,Family,malayalam,A commercial family entertainer with powerful scenes and visuals.
+Indian Movie 118,8.0,Crime|Thriller,punjabi,"An exciting crime movie blending action, emotion, and music."
+Indian Movie 119,7.2,Animation,marathi,A commercial animation entertainer with powerful scenes and visuals.
+Love Story 120,7.6,Fantasy|Adventure,kannada,A commercial fantasy entertainer with powerful scenes and visuals.
+Indian Movie 121,6.4,Family,malayalam,A commercial family entertainer with powerful scenes and visuals.
+Indian Movie 122,8.6,Comedy,tamil,A comedy drama featuring excellent performances and emotional depth.
+Indian Movie 123,8.6,Fantasy,kannada,"An exciting fantasy movie blending action, emotion, and music."
+Indian Movie 124,7.8,Biography|Drama,kannada,Indian Movie 124 is an engaging biography film appreciated for its strong storyline.
+Love Story 125,7.0,Fantasy,marathi,A fantasy drama featuring excellent performances and emotional depth.
+Veeram 126,6.0,Biography,tamil,A commercial biography entertainer with powerful scenes and visuals.
+Indian Movie 127,9.4,Drama,kannada,A drama drama featuring excellent performances and emotional depth.
+Indian Movie 128,9.0,Drama|Romance,punjabi,Indian Movie 128 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 129,8.0,Action,punjabi,A critically acclaimed action known for direction and cinematography.
+Action Hero 130,7.2,Musical,telugu,A commercial musical entertainer with powerful scenes and visuals.
+Indian Movie 131,6.4,History,hindi,A critically acclaimed history known for direction and cinematography.
+Indian Movie 132,6.3,History,telugu,A history drama featuring excellent performances and emotional depth.
+Indian Movie 133,8.8,Thriller,kannada,Indian Movie 133 is an engaging thriller film appreciated for its strong storyline.
+Indian Movie 134,6.4,Family,bengali,"An exciting family movie blending action, emotion, and music."
+Veeram 135,8.8,Action|Comedy,malayalam,"An exciting action movie blending action, emotion, and music."
+Indian Movie 136,7.6,Horror,punjabi,A commercial horror entertainer with powerful scenes and visuals.
+Indian Movie 137,9.5,Action|Drama,kannada,"An exciting action movie blending action, emotion, and music."
+Indian Movie 138,6.2,Action|Comedy,hindi,A action drama featuring excellent performances and emotional depth.
+Indian Movie 139,6.7,Drama|Romance,hindi,A drama drama featuring excellent performances and emotional depth.
+Love Story 140,6.6,Family,hindi,A family drama featuring excellent performances and emotional depth.
+Indian Movie 141,7.4,Action,punjabi,A commercial action entertainer with powerful scenes and visuals.
+Indian Movie 142,6.8,Drama,kannada,A critically acclaimed drama known for direction and cinematography.
+Action Hero 143,8.4,Romance,kannada,"An exciting romance movie blending action, emotion, and music."
+Veeram 144,8.8,Crime|Thriller,malayalam,A critically acclaimed crime known for direction and cinematography.
+Love Story 145,7.9,Comedy,tamil,A commercial comedy entertainer with powerful scenes and visuals.
+Indian Movie 146,6.2,Thriller,tamil,A commercial thriller entertainer with powerful scenes and visuals.
+Indian Movie 147,8.6,Action|Comedy,kannada,A critically acclaimed action known for direction and cinematography.
+Indian Movie 148,7.6,Comedy,kannada,A critically acclaimed comedy known for direction and cinematography.
+Indian Movie 149,7.8,Adventure,punjabi,A critically acclaimed adventure known for direction and cinematography.
+Love Story 150,8.1,Romance,bengali,A commercial romance entertainer with powerful scenes and visuals.
+Indian Movie 151,6.9,Action|Comedy,hindi,A action drama featuring excellent performances and emotional depth.
+Indian Movie 152,8.9,Crime|Thriller,telugu,A commercial crime entertainer with powerful scenes and visuals.
+Veeram 153,6.1,Action|Drama,tamil,A critically acclaimed action known for direction and cinematography.
+Indian Movie 154,8.3,Animation,kannada,A animation drama featuring excellent performances and emotional depth.
+Love Story 155,7.5,Action|Drama,punjabi,Love Story 155 is an engaging action film appreciated for its strong storyline.
+Action Hero 156,7.2,History,marathi,A commercial history entertainer with powerful scenes and visuals.
+Indian Movie 157,6.4,Crime|Thriller,tamil,A commercial crime entertainer with powerful scenes and visuals.
+Indian Movie 158,8.4,Sci-Fi,kannada,A critically acclaimed sci-fi known for direction and cinematography.
+Indian Movie 159,7.9,Biography|Drama,punjabi,Indian Movie 159 is an engaging biography film appreciated for its strong storyline.
+Love Story 160,6.9,Sport,hindi,A critically acclaimed sport known for direction and cinematography.
+Indian Movie 161,8.9,Animation,telugu,"An exciting animation movie blending action, emotion, and music."
+Veeram 162,7.4,Musical,malayalam,"An exciting musical movie blending action, emotion, and music."
+Indian Movie 163,8.2,Mystery,punjabi,A critically acclaimed mystery known for direction and cinematography.
+Indian Movie 164,6.2,Biography|Drama,kannada,"An exciting biography movie blending action, emotion, and music."
+Love Story 165,9.2,Thriller,punjabi,A critically acclaimed thriller known for direction and cinematography.
+Indian Movie 166,6.1,Comedy,malayalam,A comedy drama featuring excellent performances and emotional depth.
+Indian Movie 167,7.9,Biography,bengali,Indian Movie 167 is an engaging biography film appreciated for its strong storyline.
+Indian Movie 168,9.5,Family,hindi,A critically acclaimed family known for direction and cinematography.
+Action Hero 169,8.3,Comedy,tamil,A critically acclaimed comedy known for direction and cinematography.
+Love Story 170,7.0,Fantasy|Adventure,kannada,A critically acclaimed fantasy known for direction and cinematography.
+Veeram 171,9.4,History,malayalam,A critically acclaimed history known for direction and cinematography.
+Indian Movie 172,6.5,Mythology,malayalam,"An exciting mythology movie blending action, emotion, and music."
+Indian Movie 173,8.6,Animation,tamil,Indian Movie 173 is an engaging animation film appreciated for its strong storyline.
+Indian Movie 174,8.7,Adventure,bengali,A commercial adventure entertainer with powerful scenes and visuals.
+Love Story 175,6.9,Animation,telugu,A commercial animation entertainer with powerful scenes and visuals.
+Indian Movie 176,7.0,Comedy|Romance,punjabi,A comedy drama featuring excellent performances and emotional depth.
+Indian Movie 177,7.9,Musical,marathi,A commercial musical entertainer with powerful scenes and visuals.
+Indian Movie 178,8.7,Mythology,bengali,A critically acclaimed mythology known for direction and cinematography.
+Indian Movie 179,9.0,Sport,malayalam,"An exciting sport movie blending action, emotion, and music."
+Veeram 180,6.8,Horror,bengali,Veeram 180 is an engaging horror film appreciated for its strong storyline.
+Indian Movie 181,8.6,Sport,bengali,A critically acclaimed sport known for direction and cinematography.
+Action Hero 182,8.8,Crime|Thriller,tamil,A critically acclaimed crime known for direction and cinematography.
+Indian Movie 183,6.4,Drama,marathi,Indian Movie 183 is an engaging drama film appreciated for its strong storyline.
+Indian Movie 184,6.3,Musical,punjabi,Indian Movie 184 is an engaging musical film appreciated for its strong storyline.
+Love Story 185,6.5,Comedy|Romance,tamil,Love Story 185 is an engaging comedy film appreciated for its strong storyline.
+Indian Movie 186,8.7,History,kannada,A commercial history entertainer with powerful scenes and visuals.
+Indian Movie 187,8.4,Action|Comedy,hindi,A commercial action entertainer with powerful scenes and visuals.
+Indian Movie 188,9.0,Crime|Thriller,bengali,A commercial crime entertainer with powerful scenes and visuals.
+Veeram 189,8.5,Drama|Romance,punjabi,"An exciting drama movie blending action, emotion, and music."
+Love Story 190,8.2,Drama,malayalam,A commercial drama entertainer with powerful scenes and visuals.
+Indian Movie 191,8.6,Family,bengali,Indian Movie 191 is an engaging family film appreciated for its strong storyline.
+Indian Movie 192,8.2,Biography|Drama,hindi,A critically acclaimed biography known for direction and cinematography.
+Indian Movie 193,8.4,Crime,telugu,Indian Movie 193 is an engaging crime film appreciated for its strong storyline.
+Indian Movie 194,8.8,Sport,telugu,A commercial sport entertainer with powerful scenes and visuals.
+The Shawshank Redemption,9.7,Drama,English,A powerful drama about hope and friendship inside a prison.
+The Godfather,9.6,Crime,English,"A gripping story of a mafia family’s loyalty, power, and betrayal."
+The Dark Knight,9.5,Action,English,A dark and thrilling superhero story featuring Gotham’s fight against chaos.
+Inception,9.2,Sci-Fi,English,A mind-bending sci-fi thriller exploring dreams within dreams.
+Fight Club,9.1,Drama,English,"A gritty story exploring identity, rebellion, and underground fight culture."
+Forrest Gump,8.9,Drama,English,A heartwarming story of a man who touches history in unexpected ways.
+Interstellar,9.0,Sci-Fi,English,A breathtaking journey through space searching for humanity’s new home.
+Gladiator,8.8,Action,English,A Roman general seeks revenge after being betrayed and exiled.
+The Matrix,9.1,Sci-Fi,English,A hacker uncovers the astonishing truth about reality and machines.
+Titanic,8.8,Romance,English,A tragic romance unfolds aboard the ill-fated RMS Titanic.
+Avatar,8.7,Fantasy,English,A visually stunning tale of humans encountering the alien world Pandora.
+Avengers: Endgame,8.9,Action,English,Heroes unite for a final battle to reverse the catastrophic blip.
+The Avengers,8.4,Action,English,Earth’s mightiest heroes assemble to stop an alien invasion.
+Jurassic Park,8.7,Sci-Fi,English,A thrilling adventure where dinosaurs are brought back to life.
+The Lion King,8.8,Animation,English,A young lion prince must reclaim his rightful place as king.
+Toy Story,8.3,Animation,English,Toys secretly come to life and embark on heartfelt adventures.
+Finding Nemo,8.4,Animation,English,A clownfish crosses the ocean to rescue his lost son.
+Up,8.5,Animation,English,A widower flies his house to South America seeking adventure.
+Coco,8.6,Animation,English,A young musician enters the Land of the Dead searching for his past.
+Monsters Inc,8.1,Animation,English,Two monsters uncover a conspiracy in the world of children's screams.
+The Conjuring,7.8,Horror,English,Paranormal investigators help a family facing dark supernatural forces.
+Insidious,7.4,Horror,English,A family battles sinister entities lurking in the astral plane.
+Annabelle,6.8,Horror,English,A haunted doll unleashes terror on a young family.
+Hereditary,8.1,Horror,English,A family uncovers terrifying secrets following a tragic loss.
+The Exorcist,8.4,Horror,English,"A young girl is possessed, prompting a desperate attempt at exorcism."
+The Nun,6.5,Horror,English,A priest investigates a demon lurking inside a Romanian abbey.
+It,7.4,Horror,English,Children face a terrifying shape-shifting clown in their town.
+It Chapter Two,6.8,Horror,English,Adults return to confront the evil clown Pennywise.
+Parasite,8.9,Thriller,Korean,A poor family infiltrates a wealthy household with shocking results.
+Train to Busan,8.4,Thriller,Korean,Passengers fight to survive a zombie outbreak on a train.
+Oldboy,8.3,Thriller,Korean,A man seeks revenge after being imprisoned mysteriously for 15 years.
+Snowpiercer,7.9,Action,English,Humanity survives on a perpetual train after a global freeze.
+The Raid,8.1,Action,Indonesian,An elite team fights through a crime-filled high-rise.
+Mad Max: Fury Road,8.6,Action,English,A wild chase across the desert in a post-apocalyptic world.
+John Wick,8.5,Action,English,A retired assassin seeks vengeance after losing everything.
+John Wick 2,8.1,Action,English,John Wick returns to honor a blood oath from his past.
+John Wick 3,7.9,Action,English,John fights the world’s top killers after being excommunicated.
+Django Unchained,8.5,Western,English,A freed slave teams with a bounty hunter to rescue his wife.
+Pulp Fiction,8.9,Crime,English,"Intersecting stories of crime, chaos, and dark humor in LA."
+Kill Bill Vol 1,8.1,Action,English,A former assassin seeks revenge against her deadly squad.
+Kill Bill Vol 2,8.0,Action,English,The Bride continues her quest for vengeance against Bill.
+The Irishman,8.2,Crime,English,A hitman recounts his life in organized crime.
+The Wolf of Wall Street,8.2,Drama,English,A stockbroker rises and falls in a world of excess.
+Shutter Island,8.2,Thriller,English,A detective investigates a psychiatric hospital on a remote island.
+Gone Girl,8.1,Thriller,English,A man becomes the prime suspect in his wife’s disappearance.
+The Social Network,7.8,Drama,English,The rise of Facebook leads to conflict and betrayal.
+Whiplash,8.5,Drama,English,A young drummer pushes his limits under a ruthless instructor.
+La La Land,8.0,Romance,English,A musician and an actress pursue dreams that pull them apart.
+The Notebook,7.9,Romance,English,A heartfelt tale of love and memories across decades.
+A Star Is Born,7.8,Drama,English,An aging musician mentors a rising singer as their bond grows.
+Moonlight,7.9,Drama,English,"A boy grows up navigating identity, hardship, and love."
+Joker,8.4,Crime,English,An isolated man descends into madness spawning a violent uprising.
+The Batman,8.1,Action,English,Batman uncovers a web of corruption tied to a serial killer.
+Man of Steel,7.5,Action,English,Superman grapples with alien identity and heroic destiny.
+Iron Man,8.2,Action,English,A billionaire builds a high-tech suit to become Iron Man.
+Iron Man 2,7.1,Action,English,Threats emerge as Stark faces both corporate and military rivals.
+Iron Man 3,7.3,Action,English,Tony Stark confronts PTSD and a dangerous new enemy.
+Captain America: Civil War,9.8,Action,English,The Avengers split after a political dispute sparks conflict.
+Captain America: The Winter Soldier,9.0,Action,English,Steve Rogers uncovers a conspiracy inside S.H.I.E.L.D.
+Black Panther,8.3,Action,English,The king of Wakanda defends his nation from internal threats.
+Doctor Strange,9.8,Fantasy,English,A surgeon explores mystical dimensions after a tragic accident.
+Spider-Man: Homecoming,7.6,Action,English,Peter Parker balances teenage life and hero duties.
+Spider-Man: No Way Home,8.3,Action,English,Multiverse chaos erupts as past villains return.
+The Amazing Spider-Man,7.0,Action,English,Peter uncovers secrets about his parents and powers.
+The Amazing Spider-Man 2,6.9,Action,English,Spider-Man faces Electro and personal loss.
+Logan,8.1,Action,English,Wolverine protects a young mutant in his final journey.
+Deadpool,8.0,Action,English,A mercenary with dark humor becomes an unconventional hero.
+Deadpool 2,7.8,Action,English,Deadpool forms a team to protect a young mutant.
+X-Men,7.4,Action,English,Mutants struggle for coexistence in a human world.
+X2,7.6,Action,English,Mutants face a threat that endangers both sides.
+X-Men: Days of Future Past,8.0,Action,English,Mutants send Wolverine back in time to prevent extinction.
+The Hunger Games,7.2,Action,English,A brave girl volunteers for a deadly televised competition.
+The Hunger Games: Catching Fire,7.5,Action,English,Katniss becomes a symbol of rebellion.
+The Hunger Games: Mockingjay Part 1,6.8,Action,English,Katniss leads a revolution against the Capitol.
+The Hunger Games: Mockingjay Part 2,6.5,Action,English,The rebellion reaches its final and most dangerous stage.
+Dune,8.1,Sci-Fi,English,A young heir becomes leader in a desert planet’s struggle.
+Inception,8.8,"Sci-Fi, Thriller",English,A thief enters dreams to steal secrets but faces a deadly mission.
+The Dark Knight,9.0,"Action, Crime",English,"Batman faces the Joker, who brings chaos to Gotham City."
+Interstellar,8.6,"Sci-Fi, Adventure",English,A team travels through a wormhole to save humanity.]
+Titanic,7.9,"Romance, Drama",English,A rich girl and a poor artist fall in love on the doomed ship.]
+Avatar,7.8,"Sci-Fi, Adventure",English,A marine joins aliens on Pandora and fights for their survival.]
+The Avengers,8.0,"Action, Sci-Fi",English,Earth's heroes unite to stop Loki and his alien army.]
+Joker,8.4,"Crime, Drama",English,A failed comedian becomes the infamous criminal Joker.]
+The Shawshank Redemption,9.3,Drama,English,A banker wrongly imprisoned forms a deep friendship in jail.]
+Forrest Gump,8.8,"Drama, Romance",English,A slow-witted man lives an extraordinary life through decades.]
+The Matrix,8.7,"Sci-Fi, Action",English,A hacker discovers the truth about the simulated reality.]
+Gladiator,8.5,"Action, Drama",English,A betrayed general seeks revenge as a gladiator.]
+Frozen,7.4,"Animation, Family",English,"Two sisters navigate love, fear, and magic in a winter kingdom."
+Finding Nemo,8.1,"Animation, Adventure",English,A clownfish searches the ocean for his missing son.
+Toy Story,8.3,"Animation, Comedy",English,Toys come to life and navigate friendship and jealousy.
+The Lion King,8.5,"Animation, Drama",English,A young lion must reclaim his kingdom from his uncle.
+Avengers: Endgame,8.4,"Action, Sci-Fi",English,Heroes unite to reverse Thanos' devastating snap.
+Avengers: Infinity War,8.4,"Action, Sci-Fi",English,The Avengers battle Thanos to stop universal destruction.
+La La Land,8.0,"Romance, Musical",English,An actress and a musician pursue dreams and love in LA.
+The Conjuring,7.5,"Horror, Thriller",English,Paranormal investigators help a family haunted by spirits.
+IT,7.3,"Horror, Thriller",English,Kids face an ancient evil clown terrorizing their town.
+The Prestige,8.5,"Drama, Mystery",English,Rival magicians battle through obsession and deception.
+Dune,8.0,"Sci-Fi, Adventure",English,A gifted young man must protect his desert planet from war.
+Mad Max: Fury Road,8.1,"Action, Adventure",English,A survivor helps rebels escape a tyrant in a desert wasteland.
+Deadpool,8.0,"Action, Comedy",English,A mercenary becomes a wise-cracking anti-hero.
+Black Panther,7.3,"Action, Adventure",English,The king of Wakanda faces a powerful challenger.
+Shutter Island,8.2,"Thriller, Mystery",English,A detective investigates a missing patient on a remote island.
+The Social Network,7.7,"Drama, Biography",English,The creation of Facebook leads to conflicts and lawsuits.
+Iron Man,7.9,"Action, Sci-Fi",English,A billionaire builds a high-tech suit to fight evil.
+Doctor Strange,7.5,"Action, Fantasy",English,A surgeon seeks mystical training after a life-changing accident.
+John Wick,7.4,"Action, Thriller",English,A retired hitman seeks revenge for his dog’s death.

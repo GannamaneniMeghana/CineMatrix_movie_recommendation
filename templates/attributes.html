@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attributes - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Image -->
+    <div class="bg-image"></div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'home' else '' }}">
+                        <a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'attributes' else '' }}">
+                        <a href="{{ url_for('attributes') }}"><i class="fa-solid fa-list"></i> Attributes</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'services' else '' }}">
+                        <a href="{{ url_for('services') }}"><i class="fa-solid fa-tv"></i> Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'recent' else '' }}">
+                        <a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'watchlist' else '' }}">
+                        <a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i> Watchlist</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="user-welcome">
+                    <h1>Attributes</h1>
+                    <p>Explore movies by specific characteristics</p>
+                </div>
+            </header>
+
+            <div class="services-section" style="margin-top: 20px;">
+                <div class="services-grid">
+                    <a href="{{ url_for('show_attribute', category='slow-paced') }}" class="service-card"
+                        style="background-image: url('/static/images/slow.jpg');">
+                        <span>Slow-Paced</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='fast-paced') }}" class="service-card"
+                        style="background-image: url('/static/images/fast.jpg');">
+                        <span>Fast-Paced</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='simple-plot') }}" class="service-card"
+                        style="background-image: url('/static/images/simple.jpg');">
+                        <span>Simple Plot</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='complex-plot') }}" class="service-card"
+                        style="background-image: url('/static/images/complex.jpg');">
+                        <span>Complex Plot</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='light-theme') }}" class="service-card"
+                        style="background-image: url('/static/images/light.jpg');">
+                        <span>Light Theme</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='dark-theme') }}" class="service-card"
+                        style="background-image: url('/static/images/dark.jpg');">
+                        <span>Dark Theme</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='watch-myself') }}" class="service-card"
+                        style="background-image: url('/static/images/solo.jpg');">
+                        <span>Watch By Myself</span>
+                    </a>
+                    <a href="{{ url_for('show_attribute', category='watch-friends') }}" class="service-card"
+                        style="background-image: url('/static/images/friends.jpg');">
+                        <span>Watch With Friends</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

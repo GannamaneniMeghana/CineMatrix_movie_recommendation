@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Background Image -->
+    <div class="bg-image"></div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'home' else '' }}">
+                        <a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'attributes' else '' }}">
+                        <a href="{{ url_for('attributes') }}"><i class="fa-solid fa-list"></i> Attributes</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'services' else '' }}">
+                        <a href="{{ url_for('services') }}"><i class="fa-solid fa-tv"></i> Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'recent' else '' }}">
+                        <a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'watchlist' else '' }}">
+                        <a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i> Watchlist</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li>
+                        <a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a>
+                    </li>
+                    {% else %}
+                    <li>
+                        <a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="user-welcome">
+                    <h1>Services</h1>
+                    <p>Browse movies by streaming service</p>
+                </div>
+            </header>
+
+            <div class="services-section" style="margin-top: 20px;">
+                <div class="two-card-grid">
+                    <a href="{{ url_for('service_catalog', service_name='netflix') }}" class="big-service-card"
+                        style="background-image: url('/static/services/netflix.jpg');">
+                        <span>Netflix</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='amazon_prime') }}" class="big-service-card"
+                        style="background-image: url('/static/services/prime.jpg');">
+                        <span>Prime Video</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='hulu') }}" class="big-service-card"
+                        style="background-image: url('/static/services/hulu.jpg');">
+                        <span>Hulu</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='disney_plus') }}" class="big-service-card"
+                        style="background-image: url('/static/services/disney.jpg');">
+                        <span>Disney+</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='max') }}" class="big-service-card"
+                        style="background-image: url('/static/services/max.jpg');">
+                        <span>Max</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='peacock') }}" class="big-service-card"
+                        style="background-image: url('/static/services/peacock.jpg');">
+                        <span>Peacock Premium</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='paramount') }}" class="big-service-card"
+                        style="background-image: url('/static/services/paramount.jpg');">
+                        <span>Paramount+</span>
+                    </a>
+                    <a href="{{ url_for('service_catalog', service_name='appletv') }}" class="big-service-card"
+                        style="background-image: url('/static/services/apple.jpg');">
+                        <span>Apple TV+</span>
+                    </a>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recent Reviews - CineMatrix</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/CineMatrix_Logo.png.png') }}" alt="CineMatrix Logo"
+                    style="height: 40px; margin-right: 10px;"> CineMatrix
+            </div>
+
+            <div class="menu-group">
+                <h3>Menu</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'home' or page == 'search' else '' }}">
+                        <a href="{{ url_for('home') }}"><i class="fa-solid fa-compass"></i> Discover</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'attributes' else '' }}">
+                        <a href="{{ url_for('attributes') }}"><i class="fa-solid fa-list"></i> Attributes</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'services' else '' }}">
+                        <a href="{{ url_for('services') }}"><i class="fa-solid fa-tv"></i> Services</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Library</h3>
+                <ul>
+                    <li class="{{ 'active' if page == 'recent' else '' }}">
+                        <a href="{{ url_for('recent_reviews') }}"><i class="fa-regular fa-clock"></i> Recent</a>
+                    </li>
+                    <li class="{{ 'active' if page == 'favorites' else '' }}">
+                        <a href="{{ url_for('watchlist') }}"><i class="fa-regular fa-bookmark"></i> Watchlist</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="menu-group">
+                <h3>Account</h3>
+                <ul>
+                    {% if current_user.is_authenticated %}
+                    <li><a href="{{ url_for('logout') }}"><i class="fa-solid fa-sign-out-alt"></i> Logout</a></li>
+                    {% else %}
+                    <li><a href="{{ url_for('login') }}"><i class="fa-solid fa-sign-in-alt"></i> Login</a></li>
+                    {% endif %}
+                </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header>
+                <div class="user-welcome">
+                    <h1>Recently Reviewed</h1>
+                    <p>See what others are watching</p>
+                </div>
+                <div class="user-profile">
+                    <div class="avatar">
+                        {% if current_user.is_authenticated %}
+                        {{ current_user.username[0].upper() }}
+                        {% else %}
+                        G
+                        {% endif %}
+                    </div>
+                </div>
+            </header>
+
+            <div class="view-section active">
+                <div class="movie-grid">
+                    {% if movies %}
+                    {% for movie in movies %}
+                    <a href="{{ url_for('movie_details', title=movie.title) }}" class="movie-card-link">
+                        <div class="movie-card">
+                            <img src="{{ movie.poster }}" class="movie-poster" alt="{{ movie.title }}">
+                            <div class="movie-info">
+                                <h3>{{ movie.title }}</h3>
+                                <div class="movie-meta">
+                                    <span>{{ movie.language }}</span>
+                                    <span><i class="fa-solid fa-star" style="color: gold;"></i> {{ movie.rating
+                                        }}</span>
+                                </div>
+                                <div class="user-review-container">
+                                    <div class="user-review-meta">
+                                        <span class="sentiment-badge-small"
+                                            style="background: {{ '#4ade8020' if movie.review_sentiment == 'positive' else '#f8717120' }}; color: {{ '#4ade80' if movie.review_sentiment == 'positive' else '#f87171' }};">
+                                            {{ movie.review_sentiment }}
+                                        </span>
+                                        <span class="review-date">{{ movie.review_date }}</span>
+                                    </div>
+                                    <p class="user-review-text">"{{ movie.user_review }}"</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    {% endfor %}
+                    {% else %}
+                    <div class="empty-state">
+                        <p>No recent reviews found.</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Bottom Navigation for Mobile -->
+    <nav class="bottom-nav">
+        <a href="{{ url_for('home') }}" class="bottom-nav-item">
+            <i class="fa-solid fa-compass"></i>
+            <span>Discover</span>
+        </a>
+        <a href="{{ url_for('recent_reviews') }}" class="bottom-nav-item active">
+            <i class="fa-regular fa-clock"></i>
+            <span>Recent</span>
+        </a>
+        <a href="{{ url_for('watchlist') }}" class="bottom-nav-item">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Watchlist</span>
+        </a>
+    </nav>
+</body>
+
+</html>
