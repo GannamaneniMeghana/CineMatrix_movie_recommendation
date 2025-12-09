@@ -3,3 +3,4 @@ flask-login
 pandas
 scikit-learn
 requests
+gunicorn
