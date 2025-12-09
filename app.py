@@ -22,6 +22,7 @@ movies.rename(columns={
     'Language': 'language',
     'Description': 'description'
 }, inplace=True)
+df = pd.read_csv("yourfile.csv", encoding='utf-8', on_bad_lines='skip')
 
 # Load Recommender system models
 tfidf_matrix = pickle.load(open("recommender_model.pkl", "rb"))
